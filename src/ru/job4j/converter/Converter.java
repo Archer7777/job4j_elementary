@@ -29,7 +29,7 @@ public class Converter {
         System.out.println("360 рублей это " + dollar + " долларов");
         int ruble = Converter.dollarToRuble(730);
         System.out.println("730 долларов это " + ruble + " рублей");
-        int euroDollar = Converter.euroToDollar(120);
-        System.out.println("120 евро это " + euroDollar + " долларов");
+        int euroDol = Converter.euroToDollar(120);
+        System.out.println("120 евро это " + euroDol + " долларов");
     }
 }
