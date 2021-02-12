@@ -7,8 +7,8 @@ public class MathFunc {
     }
 
     public static void main(String[] args) {
-        int result = MathFunc.func1(100);
-        System.out.println(result);
+        int result1 = MathFunc.func1(100);
+        System.out.println(result1);
 
     }
 }
