@@ -52,10 +52,10 @@ public class Converter {
         boolean passed3 = expectedRuble == outRuble;
         System.out.println("730 dollars are 53290. Test result : " + passed3);
 
-        int in4 = 140;
-        int expected = 2;
-        int out = Converter.rubleToEuro(in4);
-        boolean passed4 = expected == out;
+        int in4 = 120;
+        int expected = 240;
+        int out2 = Converter.euroToDollar(in4);
+        boolean passed4 = expected == out2;
         System.out.println("120 euros are 240. Test result : " + passed4);
     }
 }
