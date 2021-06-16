@@ -15,7 +15,7 @@ public class MathCalculator {
     }
 
     public static double sumAllOperations(double first, double second) {
-        return ru.job4j.math.MathFunction.sum(first, second) + multiply(first, second)
+        return ru.job4j.mathMathFunction.sum(first, second) + multiply(first, second)
                 + divide(first, second) + residual(first, second);
     }
 
