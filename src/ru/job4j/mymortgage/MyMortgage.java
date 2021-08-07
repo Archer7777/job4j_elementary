@@ -26,7 +26,7 @@ public class MyMortgage {
         System.out.print("Введите сумму долга: ");
         Scanner in = new Scanner(System.in);
         double price = in.nextDouble();
-        double pay = Math.round(price * 30 / 100);
+        double pay = Math.round(price * 20 / 100);
         System.out.print("Введите процентную ставку: ");
         double percent = in.nextDouble();
         System.out.print("Введите срок кредита (лет): ");
