@@ -23,16 +23,16 @@ public class MyMortgage {
     }
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
         System.out.print("Введите сумму долга: ");
-        double price = in.nextInt();
-        double pay = price * 30 / 100;
-        Scanner in1 = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
+        double price = in.nextDouble();
+        double pay = Math.round(price * 30 / 100);
         System.out.print("Введите процентную ставку: ");
-        double percent = in1.nextInt();
-        Scanner in2 = new Scanner(System.in);
+        //Scanner in2 = new Scanner(System.in);
+        double percent = in.nextDouble();
         System.out.print("Введите срок кредита (лет): ");
-        int years = in2.nextInt();
+        //Scanner in3 = new Scanner(System.in);
+        int years = in.nextInt();
 
         System.out.println();
         System.out.println("Общая сумма кредита: " + price + " руб");
