@@ -13,7 +13,7 @@ package ru.job4j.mymortgage;
  */
 
 public class MyMortgage {
-    public static double ipoteka(double price, double pay, double percent, int years) {
+    public static double mortgage(double price, double pay, double percent, int years) {
         double i = percent / 12 / 100;
         double n = years * 12;
         double r = (price - pay) * ((i * Math.pow(1 + i, n)) / (Math.pow(1 + i, n) - 1));
@@ -31,7 +31,7 @@ public class MyMortgage {
         System.out.println("Первый платеж: " + pay + " руб");
         System.out.println("Ставка: " + percent + " %");
         System.out.println("Срок кредита: " + years + " лет");
-        System.out.println("Ежемесячный платеж: " + MyMortgage.ipoteka(price, pay, percent, years) + " руб");
+        System.out.println("Ежемесячный платеж: " + MyMortgage.mortgage(price, pay, percent, years) + " руб");
     }
 }
 
