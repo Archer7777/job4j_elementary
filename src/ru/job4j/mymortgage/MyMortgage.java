@@ -1,5 +1,7 @@
 package ru.job4j.mymortgage;
 
+import java.util.Scanner;
+
 /*****
  **
  ** Рассчет аннуитентного платежа
@@ -21,11 +23,18 @@ public class MyMortgage {
     }
 
     public static void main(String[] args) {
-        double price = 3000000;
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите сумму долга: ");
+        double price = in.nextInt();
         double pay = price * 30 / 100;
-        double percent = 9;
-        int years = 20;
+        Scanner in1 = new Scanner(System.in);
+        System.out.print("Введите процентную ставку: ");
+        double percent = in1.nextInt();
+        Scanner in2 = new Scanner(System.in);
+        System.out.print("Введите срок кредита (лет): ");
+        int years = in2.nextInt();
 
+        System.out.println();
         System.out.println("Общая сумма кредита: " + price + " руб");
         System.out.println("Первый платеж: " + pay + " руб");
         System.out.println("Ставка: " + percent + " %");
