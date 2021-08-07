@@ -9,4 +9,9 @@ public class Mortgage {
         }
         return year;
     }
+
+    public static void main(String[] args) {
+        int result = Mortgage.year(3000000, 480000, 9);
+        System.out.println("Закроем за " + result + " лет");
+    }
 }
