@@ -21,7 +21,6 @@ public class MyMortgage {
     }
 
     public static void main(String[] args) {
-
         double price = 3000000;
         double pay = price * 30 / 100;
         double percent = 9;
