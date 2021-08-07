@@ -28,10 +28,8 @@ public class MyMortgage {
         double price = in.nextDouble();
         double pay = Math.round(price * 30 / 100);
         System.out.print("Введите процентную ставку: ");
-        //Scanner in2 = new Scanner(System.in);
         double percent = in.nextDouble();
         System.out.print("Введите срок кредита (лет): ");
-        //Scanner in3 = new Scanner(System.in);
         int years = in.nextInt();
 
         System.out.println();
