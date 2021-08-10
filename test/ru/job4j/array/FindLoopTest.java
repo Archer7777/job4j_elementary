@@ -3,7 +3,6 @@ package ru.job4j.array;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
 
 public class FindLoopTest {
     @Test
@@ -16,11 +15,11 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenArrayHas5Then2() {
+    public void whenArrayHas0ThenMinus1() {
         int[] data = {5, 4, 3, 2};
-        int el = 3;
+        int el = 1;
         int result = FindLoop.indexOf(data, el);
-        int expected = 2;
+        int expected = -1;
         Assert.assertEquals(expected, result);
     }
 
