@@ -4,7 +4,6 @@ public class WeeklySalary {
     public static int calculate(int[] hours) {
         int regular = 10;
         int extra = 15;
-        //int doubleRegular = 20; // странно
         int doubleExtra = 30;
         int salary = 0;
 
