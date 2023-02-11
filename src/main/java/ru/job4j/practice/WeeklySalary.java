@@ -8,22 +8,21 @@ public class WeeklySalary {
         int doubleExtra = 30;
         int salary = 0;
 
-        for (int i = 0; i < hours.length; i++)
+        for (int i = 0; i < hours.length; i++) {
             if (i < 5) {
                 if (hours[i] <= 8) {
                     salary = salary + hours[i] * regular;
-                }
-                else {
+                } else {
                     salary = salary + (hours[i] - 8) * extra + 8 * regular;
                 }
             } else {
                 if (hours[i] <= 8) {
                     salary = salary + hours[i] * extra;
-                }
-                else {
+                } else {
                     salary = salary + (hours[i] - 8) * doubleExtra + hours[i] * extra;
                 }
             }
+        }
         return salary;
     }
 }
