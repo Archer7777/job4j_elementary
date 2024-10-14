@@ -6,6 +6,7 @@ public class SimpleStringEncoder {
         if (input.isEmpty()) {
             return "Строка не может быть пустой";
         }
+
         String result = "";
         char symbol = input.charAt(0);
         int counter = 1;
