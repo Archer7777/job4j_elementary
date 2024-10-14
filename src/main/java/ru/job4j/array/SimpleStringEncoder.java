@@ -15,7 +15,7 @@ public class SimpleStringEncoder {
             if (input.charAt(i) == symbol) {
                 counter++;
             } else {
-                result += result + symbol;
+                result += symbol;
                 if (counter > 1) {
                     result += counter;
                 }
